@@ -1,8 +1,6 @@
 class ResultNotFoundError(Exception):
     def __init__(self, url: str):
-        super().__init__(
-            f'[!] API returned a 404 HTTP error for URL: "{url}"'
-        )
+        super().__init__(f'[!] API returned a 404 HTTP error for URL: "{url}"')
 
 
 class MetaWeatherAPIUnreachableError(Exception):
